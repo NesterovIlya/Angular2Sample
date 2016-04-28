@@ -49,5 +49,5 @@ import {ArticleService} from "./article/article.service";
         component: ArticleComponent
     }
 ])
-export class AppComponent {
-}
+export class AppComponent { }
+

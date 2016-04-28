@@ -1,5 +1,5 @@
 import {Article} from "./article";
-import {PaginalResponse} from "../util/PaginalResponse";
+import {PaginalResponse} from "../util/paginal-response";
 
 
 export class ArticlePaginalResponse extends PaginalResponse {

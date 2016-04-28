@@ -1,12 +1,11 @@
 import {Injectable} from 'angular2/core';
 import {Article} from './article';
 import {ARTICLES} from './mock-articles';
-import {PaginalRequest} from "../util/PaginalRequest";
-import {ArticlePaginalResponse} from "./ArticlePaginalResponse";
+import {PaginalRequest} from "../util/paginal-request";
+import {ArticlePaginalResponse} from "./article-paginal-response";
 
 @Injectable()
 export class ArticleService {
-
 
     getArticlesByPage(request: PaginalRequest) {
         return Promise.resolve(ARTICLES).then(articles => this._emulatePagination(articles, request));

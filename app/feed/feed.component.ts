@@ -2,8 +2,8 @@ import { Component, OnInit } from 'angular2/core';
 import {ArticleMiniComponent} from '../article/article-mini.component';
 import { Article } from '../article/article'
 import {ArticleService} from "../article/article.service";
-import {PaginalRequest} from "../util/PaginalRequest";
-import {ArticlePaginalResponse} from "../article/ArticlePaginalResponse";
+import {PaginalRequest} from "../util/paginal-request";
+import {ArticlePaginalResponse} from "../article/article-paginal-response";
 
 
 @Component({
@@ -14,7 +14,8 @@ import {ArticlePaginalResponse} from "../article/ArticlePaginalResponse";
         ArticleMiniComponent
     ]
 })
-export class FeedComponent implements OnInit{
+export class FeedComponent implements OnInit {
+
     articleResponse: ArticlePaginalResponse;
     pageOpts: PaginalRequest;
 
@@ -53,3 +54,4 @@ export class FeedComponent implements OnInit{
         }
     }
 }
+
