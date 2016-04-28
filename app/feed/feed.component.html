@@ -1,0 +1,28 @@
+<section class="feed-container">
+    <header class="view-header margin-bottom-10">Feed</header>
+    <section class="feed-content" *ngIf="articleResponse">
+        <article-mini
+                *ngFor="#article of articleResponse.articles"
+                [article]="article">
+        </article-mini>
+    </section>
+    <nav class="feed-nav" *ngIf="articleResponse">
+        <span class="feed-nav-item nav-button">
+            <i class="fa fa-chevron-left"
+               aria-hidden="true"
+               [style.display]="articleResponse.page === 1 ? 'none' : 'inherit'"
+               (click)="previousPage()"
+            ></i>
+        </span>
+        <span class="feed-nav-item">
+            Page {{articleResponse.page}} of {{getTotalPageCount()}}. Total results: {{articleResponse.total}}
+        </span>
+        <span class="feed-nav-item nav-button">
+            <i class="fa fa-chevron-right feed-nav-item"
+               aria-hidden="true"
+               [style.display]="articleResponse.page === getTotalPageCount() ? 'none' : 'inherit'"
+               (click)="nextPage()"
+            ></i>
+        </span>
+    </nav>
+</section>

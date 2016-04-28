@@ -1,0 +1,49 @@
+hr {
+    color: #777777;
+}
+
+.article-author {
+    color: #777777;
+    font-size: 0.9em;
+}
+
+.article-title {
+    color: #3561aa;
+    font-size: 1.2em;
+}
+
+.article-wrapper {
+    padding: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.article-wrapper:hover {
+    background-color: #cccccc;
+    cursor: hand;
+}
+
+.back-button {
+    color: #3561aa;
+    cursor: hand;
+    font-size: 1.5em;
+}
+
+.article-panel {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px solid #cccccc;
+}
+
+.panel-title {
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.article-content {
+    margin-top: 10px;
+    padding:5px;
+}

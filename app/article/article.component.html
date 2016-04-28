@@ -1,0 +1,15 @@
+<div class="back-button" (click)="goToSearch()">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to search
+</div>
+<section class="article-panel" *ngIf="article">
+    <header>
+        <span class="margin-right-10"><i class="fa fa-calendar margin-right-5 common-blue"></i>{{article.publishDate | date:"medium"}}</span>
+        <span class="margin-right-10"><i class="fa fa-comments margin-right-5 common-blue"></i>{{article.commentsCount}}</span>
+        <span class="article-author">Author: {{article.author}}</span>
+    </header>
+    <section class="article-title panel-title">
+        {{article.title}}
+    </section>
+    <section [innerHTML]="article.content" class="article-content">
+    </section>
+</section>

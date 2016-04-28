@@ -1,0 +1,12 @@
+.form-control {
+    font-size: 16px;
+    height: 40px;
+}
+
+.input-group-addon {
+    color: white;
+    background-color: #2d63a0;
+    font-size: 1.2em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
